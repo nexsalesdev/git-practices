@@ -15,6 +15,31 @@ build status from CI.
   - Editor swap files
 * Include a .gitmessage file which should be added as a git commit message template.
 
+## Local Git Setup for users
+* Ensure Full Name is set for the user
+
+```
+git config --global user.name "Foo Bar"
+```
+
+* Ensure Email address is set for the user
+
+```
+git config --global user.email foo.bar@nexsales.com
+```
+
+* Recommended: Set a difftool. Use git difftool to analyze diffs instead of git diff.
+
+```
+git config --global diff.tool $EDITOR
+```
+
+Recommended: Set a mergetool. Use git mergetool to merge instead of git merge.
+
+```
+git config --global merge.tool $EDITOR
+```
+
 ## Common Configuration for projects
 * CRLF should be checked for each file during input 
 
